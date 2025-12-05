@@ -19,7 +19,7 @@ export function CreditsAPI() {
     const handleRequest = async () => {
       const uid = searchParams.get('uid');
       const action = searchParams.get('action') || 'get';
-      const token = searchParams.get('token');
+      // token param reserved for future auth: searchParams.get('token')
 
       // Basic validation
       if (!uid) {
